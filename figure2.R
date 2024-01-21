@@ -19,6 +19,7 @@ cumulative_percentages <- data |>
   ) |>
   ungroup()
 
+# Plot the figure
 ggplot(
   cumulative_percentages,
   aes(start_year, ymin = pct_cum_prev, ymax = pct_cum,

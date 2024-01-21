@@ -15,6 +15,7 @@ colors <- c(Senate = "#6141D9", House = "#2AAD53")
 # This is for plotting the text labels that show the 2023-2025 congress median age.
 last_congress_age <- median_ages |> filter(start_year == 2023)
 
+# Plot the figure
 ggplot(
   median_ages,
   aes(
