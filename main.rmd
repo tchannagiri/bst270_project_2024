@@ -1,0 +1,38 @@
+---
+title: "BST 270: Individual Project"
+author: "TJ Channagiri"
+format: html
+---
+
+## Description
+
+This is the RMarkdown file to reproduce two of the figures in the FiveThirtyEight article "Congress Today Is Older Than It's Ever Been" at the following URL: [https://fivethirtyeight.com/features/aging-congress-boomers/](https://fivethirtyeight.com/features/aging-congress-boomers/).
+
+The data to generate these figures was downloaded here: [https://github.com/fivethirtyeight/data/blob/master/congress-demographics/data_aging_congress.csv](https://github.com/fivethirtyeight/data/blob/master/congress-demographics/data_aging_congress.csv) and is located in this repositoru at `data/data_aging_congress.csv`. Note that this is the original data from FiveThirtyEight and has not been modified.
+
+```{r echo=FALSE, warning=FALSE, message=FALSE, error=FALSE}
+
+# Code for loading data.
+# Please see the following file for more details.
+source("setup.R")
+
+# If figure1.png is not already generated, generate it.
+if (!file.exists("figure1.R")) {
+  # Please see the following file for more details on generating figure 1.
+  source("figure1.R")
+}
+
+# If figure2.png is not already generated, generate it.
+if (!file.exists("figure2.R")) {
+  # Please see the following file for more details on generating figure 2.
+  source("figure2.R")
+}
+```
+
+## Figure 1
+This is the first figure in the artcle, showing the median age of each of the two congress chambers (Senate and House) at each year.
+![figure1](plots/figure1.png)
+
+## Figure 2
+This is the third figure in the article, showing the share of congress that is made up by each generation. 
+![figure2](plots/figure2.png)
